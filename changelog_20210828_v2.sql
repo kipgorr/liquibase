@@ -1,8 +1,8 @@
 -- liquibase formatted sql
 
--- changeset prod.cicd:v1.1
+-- changeset prod_1.ci_cd:v2.1
 -- rollback drop tabel person_cicd2_test
-create table person_cicd2_test (
+create or replace table person_cicd2_t (
     id_a int primary key,
     name varchar(50) not null,
     address1 varchar(50),
@@ -10,9 +10,9 @@ create table person_cicd2_test (
     city_a varchar(30)
 )
 
--- changeset prod.cicd:v1.2
+-- changeset prod_1.ci_cd:v2.2
 -- rollback drop tabel company_cicd2_test
-create table company_cicd2_test (
+create or replace table company_cicd2_t (
     id_a int primary key,
     name varchar(50) not null,
     address1 varchar(50),
