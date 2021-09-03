@@ -1,6 +1,6 @@
 -- liquibase formatted sql
 
--- changeset prod_1.ci_cd:v2.1
+-- changeset prod_1.ci_cd:v3.1
 -- rollback drop tabel person_cicd2_t1
 create or replace table person_cicd2_t1 (
     id_a int primary key,
@@ -10,7 +10,7 @@ create or replace table person_cicd2_t1 (
     city_a varchar(30)
 )
 
--- changeset prod_1.ci_cd:v2.2
+-- changeset prod_1.ci_cd:v3.2
 -- rollback drop tabel company_cicd2_t1
 create or replace table company_cicd2_t1 (
     id_a int primary key,
